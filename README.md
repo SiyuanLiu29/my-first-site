@@ -30,6 +30,8 @@ npm run preview
 - 根目录：仓库根目录（留空）
 - 构建环境 Node.js：22（至少 22.12）
 
+2026-11-02 已在现有 Pages 项目中确认 GitHub 仓库连接、`main` 自动部署，并将旧模板的 `exit 0` / `public` 配置更新为 `npm run build` / `dist`。
+
 在 Cloudflare 的 Workers & Pages 中打开此 Pages 项目，确认 Git 仓库连接和上述构建设置。推送到生产分支后，Pages 自动构建并发布；其他分支可生成预览部署。确认部署状态为成功后打开网站验证。构建成功与线上发布成功是两个独立步骤。
 
 项目只有一个页面，不使用客户端路径路由，不需要重写规则。资源使用 Vite 的根路径配置，适用于 Pages 根域名，不要设置为 `/my-first-site/`（那是另一种托管路径）。部署后请测试手机、刷新续聊和 `?reset=true`。
