@@ -2,10 +2,10 @@ import React, { useLayoutEffect, useRef, useState } from 'react';
 import { optionsFor } from './engine.js';
 import { useConversation } from './hooks/useConversation.js';
 
+import userAvatar from './assets/user.png';
+import zhrAvatar from './assets/zhr.jpg';
 function Avatar({ user = false }) {
-  return <span className={`avatar ${user ? 'avatar-user' : ''}`} aria-hidden="true">
-    {user ? <svg viewBox="0 0 40 40"><circle cx="20" cy="15" r="6"/><path d="M9 35c0-14 22-14 22 0"/></svg> : <svg viewBox="0 0 40 40"><circle className="moon" cx="28" cy="12" r="4"/><path d="M0 33 13 17 26 33Z"/><path className="hill" d="m16 40 13-20 17 20Z"/></svg>}
-  </span>;
+  return <img className="avatar" src={user ? userAvatar : zhrAvatar} alt="" aria-hidden="true" />;
 }
 
 export default function App() {

@@ -1,6 +1,6 @@
 <!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>本地验收工具</title>
 <body><h1>本地验收工具</h1><p>此文件仅用于本地开发，不包含在生产构建中。通过合法剧情路径生成测试存档。</p>
-<label>检查位置 <select id="target"><option value="q7">第七组长候选</option><option value="q10">第十组长候选</option><option value="night:0">疲劳回收之后</option><option value="after11:0">最后的四秒停顿</option><option value="end">完成的聊天</option></select></label>
+<label>检查位置 <select id="target"><option value="q7">第七组长候选</option><option value="q8">第八组长候选</option><option value="night:0">疲劳回收之后</option><option value="after9:0">最后的一秒停顿</option><option value="end">完成的聊天</option></select></label>
 <button id="seed">生成测试进度并打开聊天</button><button id="bad">测试损坏存档</button>
 <script type="module">
 import { initial,current,optionsFor,transition,serialize,STORAGE_KEY } from '/src/engine.js';

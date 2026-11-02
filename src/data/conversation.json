@@ -1,18 +1,96 @@
 {
-  "version": 1,
+  "version": 2,
   "start": "start:0",
   "nodes": {
     "start:0": {
-      "type": "time",
-      "text": "22:36",
       "id": "start:0",
-      "next": "start:1"
+      "type": "time",
+      "next": "start:1",
+      "text": "22:41"
     },
     "start:1": {
-      "type": "message",
-      "text": "在干嘛",
       "id": "start:1",
+      "type": "message",
       "next": "q1",
+      "text": "在干嘛",
+      "delay": 800,
+      "typing": false
+    },
+    "b1A:0": {
+      "id": "b1A:0",
+      "type": "message",
+      "next": "b1A:1",
+      "text": "哦",
+      "delay": 800,
+      "typing": false
+    },
+    "b1A:1": {
+      "id": "b1A:1",
+      "type": "message",
+      "next": "b1A:2",
+      "text": "我也刚回来没多久",
+      "delay": 800,
+      "typing": false
+    },
+    "b1A:2": {
+      "id": "b1A:2",
+      "type": "message",
+      "next": "after1:0",
+      "text": "终于能躺会儿了",
+      "delay": 800,
+      "typing": false
+    },
+    "b1B:0": {
+      "id": "b1B:0",
+      "type": "message",
+      "next": "b1B:1",
+      "text": "好悠闲",
+      "delay": 800,
+      "typing": false
+    },
+    "b1B:1": {
+      "id": "b1B:1",
+      "type": "reply",
+      "next": "b1B:2",
+      "text": "你不也在玩"
+    },
+    "b1B:2": {
+      "id": "b1B:2",
+      "type": "message",
+      "next": "b1B:3",
+      "text": "我这是刚忙完",
+      "delay": 800,
+      "typing": false
+    },
+    "b1B:3": {
+      "id": "b1B:3",
+      "type": "message",
+      "next": "after1:0",
+      "text": "性质不一样",
+      "delay": 800,
+      "typing": false
+    },
+    "b1C:0": {
+      "id": "b1C:0",
+      "type": "message",
+      "next": "b1C:1",
+      "text": "那挺好",
+      "delay": 800,
+      "typing": false
+    },
+    "b1C:1": {
+      "id": "b1C:1",
+      "type": "message",
+      "next": "b1C:2",
+      "text": "我今天感觉一直在干嘛",
+      "delay": 800,
+      "typing": false
+    },
+    "b1C:2": {
+      "id": "b1C:2",
+      "type": "message",
+      "next": "after1:0",
+      "text": "现在终于没事了",
       "delay": 800,
       "typing": false
     },
@@ -30,172 +108,101 @@
         },
         {
           "id": "1B",
-          "label": "发呆",
+          "label": "躺着玩手机",
           "messages": [
-            "发呆"
+            "躺着玩手机"
           ],
           "next": "b1B:0"
         },
         {
           "id": "1C",
-          "label": "准备睡了",
+          "label": "没干嘛",
           "messages": [
-            "准备睡了"
+            "没干嘛"
           ],
           "next": "b1C:0"
         }
       ]
     },
-    "b1A:0": {
-      "type": "message",
-      "text": "哦",
-      "id": "b1A:0",
-      "next": "b1A:1",
-      "delay": 1000,
-      "typing": false
-    },
-    "b1A:1": {
-      "type": "message",
-      "text": "我也刚回来",
-      "id": "b1A:1",
-      "next": "b1A:2",
-      "delay": 700,
-      "typing": false
-    },
-    "b1A:2": {
-      "type": "message",
-      "text": "累",
-      "id": "b1A:2",
-      "next": "after1:0",
-      "delay": 700,
-      "typing": false
-    },
-    "b1B:0": {
-      "type": "message",
-      "text": "你每天怎么都有这么多呆可以发",
-      "id": "b1B:0",
-      "next": "b1B:1",
-      "delay": 1700,
-      "typing": true
-    },
-    "b1B:1": {
-      "type": "reply",
-      "text": "你管我",
-      "id": "b1B:1",
-      "next": "b1B:2"
-    },
-    "b1B:2": {
-      "type": "message",
-      "text": "我不管",
-      "id": "b1B:2",
-      "next": "b1B:3",
-      "delay": 1000,
-      "typing": false
-    },
-    "b1B:3": {
-      "type": "message",
-      "text": "我就是问一下",
-      "id": "b1B:3",
-      "next": "b1B:4",
-      "delay": 700,
-      "typing": false
-    },
-    "b1B:4": {
-      "type": "message",
-      "text": "哈哈哈哈哈哈",
-      "id": "b1B:4",
-      "next": "b1B:5",
-      "delay": 700,
-      "typing": false
-    },
-    "b1B:5": {
-      "type": "message",
-      "text": "我刚回来",
-      "id": "b1B:5",
-      "next": "b1B:6",
-      "delay": 700,
-      "typing": false
-    },
-    "b1B:6": {
-      "type": "message",
-      "text": "累",
-      "id": "b1B:6",
-      "next": "after1:0",
-      "delay": 700,
-      "typing": false
-    },
-    "b1C:0": {
-      "type": "message",
-      "text": "这么早",
-      "id": "b1C:0",
-      "next": "b1C:1",
-      "delay": 1000,
-      "typing": false
-    },
-    "b1C:1": {
-      "type": "reply",
-      "text": "不行吗",
-      "id": "b1C:1",
-      "next": "b1C:2"
-    },
-    "b1C:2": {
-      "type": "message",
-      "text": "行啊",
-      "id": "b1C:2",
-      "next": "b1C:3",
-      "delay": 1000,
-      "typing": false
-    },
-    "b1C:3": {
-      "type": "message",
-      "text": "就是有点震惊",
-      "id": "b1C:3",
-      "next": "b1C:4",
-      "delay": 700,
-      "typing": false
-    },
-    "b1C:4": {
-      "type": "message",
-      "text": "你居然会这么早睡",
-      "id": "b1C:4",
-      "next": "b1C:5",
-      "delay": 700,
-      "typing": false
-    },
-    "b1C:5": {
-      "type": "reply",
-      "text": "……",
-      "id": "b1C:5",
-      "next": "b1C:6"
-    },
-    "b1C:6": {
-      "type": "message",
-      "text": "哈哈哈哈哈哈",
-      "id": "b1C:6",
-      "next": "b1C:7",
-      "delay": 1000,
-      "typing": false
-    },
-    "b1C:7": {
-      "type": "message",
-      "text": "我刚回来",
-      "id": "b1C:7",
-      "next": "b1C:8",
-      "delay": 700,
-      "typing": false
-    },
-    "b1C:8": {
-      "type": "message",
-      "text": "累",
-      "id": "b1C:8",
-      "next": "after1:0",
-      "delay": 700,
-      "typing": false
-    },
     "after1:0": {
       "id": "after1:0",
-      "type": "jump",
-      "next": "q2"
+      "type": "message",
+      "next": "after1:1",
+      "text": "今天是真的有点困",
+      "delay": 800,
+      "typing": false
+    },
+    "after1:1": {
+      "id": "after1:1",
+      "type": "message",
+      "next": "q2",
+      "text": "下午有一会儿感觉脑子都不转了",
+      "delay": 2000,
+      "typing": true
+    },
+    "b2A:0": {
+      "id": "b2A:0",
+      "type": "message",
+      "next": "b2A:1",
+      "text": "有一点",
+      "delay": 800,
+      "typing": false
+    },
+    "b2A:1": {
+      "id": "b2A:1",
+      "type": "message",
+      "next": "b2A:2",
+      "text": "主要是困",
+      "delay": 800,
+      "typing": false
+    },
+    "b2A:2": {
+      "id": "b2A:2",
+      "type": "message",
+      "next": "after2:0",
+      "text": "累倒还好",
+      "delay": 800,
+      "typing": false
+    },
+    "b2B:0": {
+      "id": "b2B:0",
+      "type": "message",
+      "next": "b2B:1",
+      "text": "已经缓过来了",
+      "delay": 800,
+      "typing": false
+    },
+    "b2B:1": {
+      "id": "b2B:1",
+      "type": "message",
+      "next": "after2:0",
+      "text": "刚回来那会儿才是真的不想动",
+      "delay": 2000,
+      "typing": true
+    },
+    "b2C:0": {
+      "id": "b2C:0",
+      "type": "message",
+      "next": "b2C:1",
+      "text": "最近是有一点",
+      "delay": 800,
+      "typing": false
+    },
+    "b2C:1": {
+      "id": "b2C:1",
+      "type": "message",
+      "next": "b2C:2",
+      "text": "不过也还好",
+      "delay": 800,
+      "typing": false
+    },
+    "b2C:2": {
+      "id": "b2C:2",
+      "type": "message",
+      "next": "after2:0",
+      "text": "忙完就好了",
+      "delay": 800,
+      "typing": false
     },
     "q2": {
       "id": "q2",
@@ -203,178 +210,181 @@
       "options": [
         {
           "id": "2A",
-          "label": "今天练很久？",
+          "label": "听起来今天挺累的",
           "messages": [
-            "今天练很久？"
+            "听起来今天挺累的"
           ],
           "next": "b2A:0"
         },
         {
           "id": "2B",
-          "label": "你怎么天天都累",
+          "label": "那你现在先缓缓",
           "messages": [
-            "你怎么天天都累"
+            "那你现在先缓缓"
           ],
           "next": "b2B:0"
         },
         {
           "id": "2C",
-          "label": "那你赶紧休息啊",
+          "label": "感觉你最近事情确实挺多",
           "messages": [
-            "那你赶紧休息啊"
+            "感觉你最近事情确实挺多"
           ],
           "next": "b2C:0"
         }
       ]
     },
-    "b2A:0": {
-      "type": "message",
-      "text": "有点",
-      "id": "b2A:0",
-      "next": "b2A:1",
-      "delay": 1000,
-      "typing": false
-    },
-    "b2A:1": {
-      "type": "message",
-      "text": "主要是今天特别困",
-      "id": "b2A:1",
-      "next": "b2A:2",
-      "delay": 700,
-      "typing": false
-    },
-    "b2A:2": {
-      "type": "message",
-      "text": "我下午真的差点坐着睡着",
-      "id": "b2A:2",
-      "next": "after2:0",
-      "delay": 700,
-      "typing": false
-    },
-    "b2B:0": {
-      "type": "message",
-      "text": "哪有天天",
-      "id": "b2B:0",
-      "next": "b2B:1",
-      "delay": 1000,
-      "typing": false
-    },
-    "b2B:1": {
-      "type": "reply",
-      "text": "差不多",
-      "id": "b2B:1",
-      "next": "b2B:2"
-    },
-    "b2B:2": {
-      "type": "message",
-      "text": "你这个差不多范围也太大了吧",
-      "id": "b2B:2",
-      "next": "b2B:3",
-      "delay": 1700,
-      "typing": true
-    },
-    "b2B:3": {
-      "type": "message",
-      "text": "哈哈哈哈哈哈",
-      "id": "b2B:3",
-      "next": "b2B:4",
-      "delay": 700,
-      "typing": false
-    },
-    "b2B:4": {
-      "type": "message",
-      "text": "但是今天是真的困",
-      "id": "b2B:4",
-      "next": "after2:0",
-      "delay": 700,
-      "typing": false
-    },
-    "b2C:0": {
-      "type": "message",
-      "text": "我才刚回来",
-      "id": "b2C:0",
-      "next": "b2C:1",
-      "delay": 1000,
-      "typing": false
-    },
-    "b2C:1": {
-      "type": "message",
-      "text": "哪有一回来就睡的",
-      "id": "b2C:1",
-      "next": "b2C:2",
-      "delay": 700,
-      "typing": false
-    },
-    "b2C:2": {
-      "type": "reply",
-      "text": "不是你自己说累吗",
-      "id": "b2C:2",
-      "next": "b2C:3"
-    },
-    "b2C:3": {
-      "type": "message",
-      "text": "累和马上睡觉又不是一回事",
-      "id": "b2C:3",
-      "next": "b2C:4",
-      "delay": 1700,
-      "typing": true
-    },
-    "b2C:4": {
-      "type": "message",
-      "text": "我不晓得",
-      "id": "b2C:4",
-      "next": "b2C:5",
-      "delay": 700,
-      "typing": false
-    },
-    "b2C:5": {
-      "type": "message",
-      "text": "反正现在还不想睡",
-      "id": "b2C:5",
-      "next": "after2:0",
-      "delay": 700,
-      "typing": false
-    },
     "after2:0": {
-      "type": "reply",
-      "text": "你今天几点起的",
       "id": "after2:0",
-      "next": "after2:1"
+      "type": "message",
+      "next": "after2:1",
+      "text": "诶",
+      "delay": 800,
+      "typing": false
     },
     "after2:1": {
-      "type": "message",
-      "text": "我不晓得",
       "id": "after2:1",
+      "type": "message",
       "next": "after2:2",
-      "delay": 1000,
-      "typing": false
+      "text": "我今天中午还遇到一个特别好笑的事",
+      "delay": 2000,
+      "typing": true
     },
     "after2:2": {
-      "type": "reply",
-      "text": "？",
       "id": "after2:2",
-      "next": "after2:3"
+      "type": "reply",
+      "next": "after2:3",
+      "text": "什么"
     },
     "after2:3": {
-      "type": "reply",
-      "text": "你几点起的你不晓得",
       "id": "after2:3",
-      "next": "after2:4"
+      "type": "message",
+      "next": "after2:4",
+      "text": "就是吃饭的时候",
+      "delay": 800,
+      "typing": false
     },
     "after2:4": {
-      "type": "message",
-      "text": "我真的没看时间",
       "id": "after2:4",
+      "type": "message",
       "next": "after2:5",
-      "delay": 1000,
+      "text": "旁边有人突然说了一句话",
+      "delay": 800,
       "typing": false
     },
     "after2:5": {
-      "type": "message",
-      "text": "反正很早",
       "id": "after2:5",
+      "type": "message",
+      "next": "after2:6",
+      "text": "我当时真的笑了好久",
+      "delay": 800,
+      "typing": false
+    },
+    "after2:6": {
+      "id": "after2:6",
+      "type": "reply",
+      "next": "after2:7",
+      "text": "然后呢"
+    },
+    "after2:7": {
+      "id": "after2:7",
+      "type": "pause",
+      "next": "after2:8",
+      "delay": 2000,
+      "typing": false
+    },
+    "after2:8": {
+      "id": "after2:8",
+      "type": "message",
+      "next": "after2:9",
+      "text": "……",
+      "delay": 0,
+      "typing": false
+    },
+    "after2:9": {
+      "id": "after2:9",
+      "type": "message",
       "next": "q3",
-      "delay": 700,
+      "text": "我现在忘了他说的什么",
+      "delay": 800,
+      "typing": false
+    },
+    "b3A:0": {
+      "id": "b3A:0",
+      "type": "message",
+      "next": "b3A:1",
+      "text": "对",
+      "delay": 800,
+      "typing": false
+    },
+    "b3A:1": {
+      "id": "b3A:1",
+      "type": "message",
+      "next": "b3A:2",
+      "text": "反正当时是真的很好笑",
+      "delay": 800,
+      "typing": false
+    },
+    "b3A:2": {
+      "id": "b3A:2",
+      "type": "message",
+      "next": "after3:0",
+      "text": "现在想不起来了",
+      "delay": 800,
+      "typing": false
+    },
+    "b3B:0": {
+      "id": "b3B:0",
+      "type": "message",
+      "next": "b3B:1",
+      "text": "差不多",
+      "delay": 800,
+      "typing": false
+    },
+    "b3B:1": {
+      "id": "b3B:1",
+      "type": "message",
+      "next": "b3B:2",
+      "text": "我本来还想给你讲来着",
+      "delay": 800,
+      "typing": false
+    },
+    "b3B:2": {
+      "id": "b3B:2",
+      "type": "message",
+      "next": "after3:0",
+      "text": "算了",
+      "delay": 800,
+      "typing": false
+    },
+    "b3C:0": {
+      "id": "b3C:0",
+      "type": "message",
+      "next": "b3C:1",
+      "text": "……",
+      "delay": 800,
+      "typing": false
+    },
+    "b3C:1": {
+      "id": "b3C:1",
+      "type": "message",
+      "next": "b3C:2",
+      "text": "你这个“完整”是不是有点勉强",
+      "delay": 2000,
+      "typing": true
+    },
+    "b3C:2": {
+      "id": "b3C:2",
+      "type": "reply",
+      "next": "b3C:3",
+      "text": "没有"
+    },
+    "b3C:3": {
+      "id": "b3C:3",
+      "type": "message",
+      "next": "after3:0",
+      "text": "行吧",
+      "delay": 800,
       "typing": false
     },
     "q3": {
@@ -383,261 +393,165 @@
       "options": [
         {
           "id": "3A",
-          "label": "很早是几点",
+          "label": "没事，你记得自己笑过就行",
           "messages": [
-            "很早是几点"
+            "没事，你记得自己笑过就行"
           ],
           "next": "b3A:0"
         },
         {
           "id": "3B",
-          "label": "行吧不审你了",
+          "label": "所以这个故事的重点是你笑了",
           "messages": [
-            "行吧不审你了"
+            "所以这个故事的重点是你笑了"
           ],
           "next": "b3B:0"
         },
         {
           "id": "3C",
-          "label": "你这个作息真的很迷",
+          "label": "好，很完整的故事",
           "messages": [
-            "你这个作息真的很迷"
+            "好，很完整的故事"
           ],
           "next": "b3C:0"
         }
       ]
     },
-    "b3A:0": {
-      "type": "message",
-      "text": "……",
-      "id": "b3A:0",
-      "next": "b3A:1",
-      "delay": 1000,
-      "typing": false
-    },
-    "b3A:1": {
-      "type": "message",
-      "text": "你怎么这么多问题",
-      "id": "b3A:1",
-      "next": "b3A:2",
-      "delay": 700,
-      "typing": false
-    },
-    "b3A:2": {
-      "type": "reply",
-      "text": "问一下",
-      "id": "b3A:2",
-      "next": "b3A:3"
-    },
-    "b3A:3": {
-      "type": "message",
-      "text": "反正还活着",
-      "id": "b3A:3",
-      "next": "b3A:4",
-      "delay": 1000,
-      "typing": false
-    },
-    "b3A:4": {
-      "type": "reply",
-      "text": "那挺好",
-      "id": "b3A:4",
-      "next": "b3A:5"
-    },
-    "b3A:5": {
-      "type": "message",
-      "text": "？",
-      "id": "b3A:5",
-      "next": "b3A:6",
-      "delay": 1000,
-      "typing": false
-    },
-    "b3A:6": {
-      "type": "message",
-      "text": "你就这个反应",
-      "id": "b3A:6",
-      "next": "b3A:7",
-      "delay": 700,
-      "typing": false
-    },
-    "b3A:7": {
-      "type": "reply",
-      "text": "不然呢",
-      "id": "b3A:7",
-      "next": "b3A:8"
-    },
-    "b3A:8": {
-      "type": "message",
-      "text": "没事",
-      "id": "b3A:8",
-      "next": "b3A:9",
-      "delay": 1000,
-      "typing": false
-    },
-    "b3A:9": {
-      "type": "message",
-      "text": "哈哈哈哈哈哈",
-      "id": "b3A:9",
-      "next": "after3:0",
-      "delay": 700,
-      "typing": false
-    },
-    "b3B:0": {
-      "type": "message",
-      "text": "这还差不多",
-      "id": "b3B:0",
-      "next": "b3B:1",
-      "delay": 1000,
-      "typing": false
-    },
-    "b3B:1": {
-      "type": "message",
-      "text": "你刚刚真的很像查户口",
-      "id": "b3B:1",
-      "next": "b3B:2",
-      "delay": 700,
-      "typing": false
-    },
-    "b3B:2": {
-      "type": "reply",
-      "text": "谁查你户口",
-      "id": "b3B:2",
-      "next": "b3B:3"
-    },
-    "b3B:3": {
-      "type": "message",
-      "text": "我不晓得",
-      "id": "b3B:3",
-      "next": "b3B:4",
-      "delay": 1000,
-      "typing": false
-    },
-    "b3B:4": {
-      "type": "message",
-      "text": "反正很像",
-      "id": "b3B:4",
-      "next": "after3:0",
-      "delay": 700,
-      "typing": false
-    },
-    "b3C:0": {
-      "type": "message",
-      "text": "我也觉得",
-      "id": "b3C:0",
-      "next": "b3C:1",
-      "delay": 1000,
-      "typing": false
-    },
-    "b3C:1": {
-      "type": "message",
-      "text": "但是没办法",
-      "id": "b3C:1",
-      "next": "b3C:2",
-      "delay": 700,
-      "typing": false
-    },
-    "b3C:2": {
-      "type": "message",
-      "text": "最近事情有点多",
-      "id": "b3C:2",
-      "next": "b3C:3",
-      "delay": 700,
-      "typing": false
-    },
-    "b3C:3": {
-      "type": "reply",
-      "text": "你自己知道就行",
-      "id": "b3C:3",
-      "next": "b3C:4"
-    },
-    "b3C:4": {
-      "type": "message",
-      "text": "知道啦",
-      "id": "b3C:4",
-      "next": "after3:0",
-      "delay": 1000,
-      "typing": false
-    },
     "after3:0": {
-      "type": "message",
-      "text": "我跟你说",
       "id": "after3:0",
+      "type": "message",
       "next": "after3:1",
-      "delay": 1000,
+      "text": "我最近老这样",
+      "delay": 800,
       "typing": false
     },
     "after3:1": {
-      "type": "message",
-      "text": "今天有个特别好笑的事",
       "id": "after3:1",
+      "type": "message",
       "next": "after3:2",
-      "delay": 700,
+      "text": "想讲一个东西",
+      "delay": 800,
       "typing": false
     },
     "after3:2": {
-      "type": "reply",
-      "text": "你说",
       "id": "after3:2",
-      "next": "after3:3"
+      "type": "message",
+      "next": "after3:3",
+      "text": "讲到一半忘了最开始要说什么",
+      "delay": 2000,
+      "typing": true
     },
     "after3:3": {
-      "type": "message",
-      "text": "我中午吃饭的时候",
       "id": "after3:3",
+      "type": "reply",
       "next": "after3:4",
-      "delay": 1000,
-      "typing": false
+      "text": "那说明脑子确实有点累了"
     },
     "after3:4": {
-      "type": "message",
-      "text": "本来困得不行",
       "id": "after3:4",
+      "type": "message",
       "next": "after3:5",
-      "delay": 700,
+      "text": "也可能",
+      "delay": 800,
       "typing": false
     },
     "after3:5": {
-      "type": "message",
-      "text": "然后旁边有人说了一句话",
       "id": "after3:5",
+      "type": "message",
       "next": "after3:6",
-      "delay": 700,
+      "text": "或者单纯就是我记性不好",
+      "delay": 800,
       "typing": false
     },
     "after3:6": {
-      "type": "message",
-      "text": "我当时真的觉得特别好笑",
       "id": "after3:6",
+      "type": "reply",
       "next": "after3:7",
-      "delay": 700,
-      "typing": false
+      "text": "你自己选一个"
     },
     "after3:7": {
-      "type": "reply",
-      "text": "什么话",
       "id": "after3:7",
-      "next": "after3:8"
+      "type": "message",
+      "next": "after3:8",
+      "text": "我不晓得",
+      "delay": 800,
+      "typing": false
     },
     "after3:8": {
-      "type": "pause",
-      "delay": 2000,
-      "typing": false,
       "id": "after3:8",
-      "next": "after3:9"
+      "type": "pause",
+      "next": "after3:9",
+      "delay": 2000,
+      "typing": false
     },
     "after3:9": {
-      "type": "message",
-      "text": "……",
       "id": "after3:9",
+      "type": "message",
       "next": "after3:10",
+      "text": "不过最近其实还行",
       "delay": 0,
       "typing": false
     },
     "after3:10": {
-      "type": "message",
-      "text": "我突然忘了",
       "id": "after3:10",
+      "type": "message",
       "next": "q4",
-      "delay": 700,
+      "text": "感觉慢慢适应一点了",
+      "delay": 800,
+      "typing": false
+    },
+    "b4A:0": {
+      "id": "b4A:0",
+      "type": "message",
+      "next": "b4A:1",
+      "text": "有吗",
+      "delay": 800,
+      "typing": false
+    },
+    "b4A:1": {
+      "id": "b4A:1",
+      "type": "reply",
+      "next": "b4A:2",
+      "text": "有一点"
+    },
+    "b4A:2": {
+      "id": "b4A:2",
+      "type": "message",
+      "next": "after4:0",
+      "text": "那还挺好的",
+      "delay": 800,
+      "typing": false
+    },
+    "b4B:0": {
+      "id": "b4B:0",
+      "type": "message",
+      "next": "b4B:1",
+      "text": "嗯",
+      "delay": 800,
+      "typing": false
+    },
+    "b4B:1": {
+      "id": "b4B:1",
+      "type": "message",
+      "next": "after4:0",
+      "text": "反正慢慢来嘛",
+      "delay": 800,
+      "typing": false
+    },
+    "b4C:0": {
+      "id": "b4C:0",
+      "type": "message",
+      "next": "b4C:1",
+      "text": "好像是",
+      "delay": 800,
+      "typing": false
+    },
+    "b4C:1": {
+      "id": "b4C:1",
+      "type": "message",
+      "next": "after4:0",
+      "text": "我自己有时候也会这么觉得",
+      "delay": 800,
       "typing": false
     },
     "q4": {
@@ -646,222 +560,150 @@
       "options": [
         {
           "id": "4A",
-          "label": "你这个故事结束得挺突然",
+          "label": "我也觉得你最近状态还不错",
           "messages": [
-            "你这个故事结束得挺突然"
+            "我也觉得你最近状态还不错"
           ],
           "next": "b4A:0"
         },
         {
           "id": "4B",
-          "label": "那你刚刚到底在兴奋什么",
+          "label": "那就好",
           "messages": [
-            "那你刚刚到底在兴奋什么"
+            "那就好"
           ],
           "next": "b4B:0"
         },
         {
           "id": "4C",
-          "label": "算了，笑了就行",
+          "label": "感觉你现在比以前稳一点了",
           "messages": [
-            "算了，笑了就行"
+            "感觉你现在比以前稳一点了"
           ],
           "next": "b4C:0"
         }
       ]
     },
-    "b4A:0": {
-      "type": "message",
-      "text": "重点不是那句话",
-      "id": "b4A:0",
-      "next": "b4A:1",
-      "delay": 1000,
-      "typing": false
-    },
-    "b4A:1": {
-      "type": "message",
-      "text": "重点是我当时笑了特别久",
-      "id": "b4A:1",
-      "next": "b4A:2",
-      "delay": 700,
-      "typing": false
-    },
-    "b4A:2": {
-      "type": "reply",
-      "text": "所以这个故事现在还有什么意义",
-      "id": "b4A:2",
-      "next": "b4A:3"
-    },
-    "b4A:3": {
-      "type": "message",
-      "text": "有啊",
-      "id": "b4A:3",
-      "next": "b4A:4",
-      "delay": 1000,
-      "typing": false
-    },
-    "b4A:4": {
-      "type": "message",
-      "text": "证明我今天笑得很开心",
-      "id": "b4A:4",
-      "next": "b4A:5",
-      "delay": 700,
-      "typing": false
-    },
-    "b4A:5": {
-      "type": "reply",
-      "text": "行",
-      "id": "b4A:5",
-      "next": "b4A:6"
-    },
-    "b4A:6": {
-      "type": "reply",
-      "text": "很有意义",
-      "id": "b4A:6",
-      "next": "b4A:7"
-    },
-    "b4A:7": {
-      "type": "message",
-      "text": "你是不是在阴阳我",
-      "id": "b4A:7",
-      "next": "after4:0",
-      "delay": 1000,
-      "typing": false
-    },
-    "b4B:0": {
-      "type": "message",
-      "text": "我刚刚明明记得",
-      "id": "b4B:0",
-      "next": "b4B:1",
-      "delay": 1000,
-      "typing": false
-    },
-    "b4B:1": {
-      "type": "message",
-      "text": "真的",
-      "id": "b4B:1",
-      "next": "b4B:2",
-      "delay": 700,
-      "typing": false
-    },
-    "b4B:2": {
-      "type": "message",
-      "text": "现在突然没了",
-      "id": "b4B:2",
-      "next": "b4B:3",
-      "delay": 700,
-      "typing": false
-    },
-    "b4B:3": {
-      "type": "message",
-      "text": "算了",
-      "id": "b4B:3",
-      "next": "b4B:4",
-      "delay": 700,
-      "typing": false
-    },
-    "b4B:4": {
-      "type": "message",
-      "text": "反正当时特别好笑",
-      "id": "b4B:4",
-      "next": "b4B:5",
-      "delay": 700,
-      "typing": false
-    },
-    "b4B:5": {
-      "type": "message",
-      "text": "哈哈哈哈哈哈",
-      "id": "b4B:5",
-      "next": "b4B:6",
-      "delay": 700,
-      "typing": false
-    },
-    "b4B:6": {
-      "type": "reply",
-      "text": "你这个人真的很莫名其妙",
-      "id": "b4B:6",
-      "next": "b4B:7"
-    },
-    "b4B:7": {
-      "type": "message",
-      "text": "哪有",
-      "id": "b4B:7",
-      "next": "after4:0",
-      "delay": 1000,
-      "typing": false
-    },
-    "b4C:0": {
-      "type": "message",
-      "text": "对啊",
-      "id": "b4C:0",
-      "next": "b4C:1",
-      "delay": 1000,
-      "typing": false
-    },
-    "b4C:1": {
-      "type": "message",
-      "text": "你终于说了句有道理的",
-      "id": "b4C:1",
-      "next": "b4C:2",
-      "delay": 700,
-      "typing": false
-    },
-    "b4C:2": {
-      "type": "reply",
-      "text": "？",
-      "id": "b4C:2",
-      "next": "b4C:3"
-    },
-    "b4C:3": {
-      "type": "message",
-      "text": "哈哈哈哈哈哈",
-      "id": "b4C:3",
-      "next": "after4:0",
-      "delay": 1000,
-      "typing": false
-    },
     "after4:0": {
-      "type": "message",
-      "text": "反正就是很好笑",
       "id": "after4:0",
+      "type": "message",
       "next": "after4:1",
-      "delay": 1000,
+      "text": "以前碰到一点事情",
+      "delay": 800,
       "typing": false
     },
     "after4:1": {
-      "type": "reply",
-      "text": "好的",
       "id": "after4:1",
-      "next": "after4:2"
+      "type": "message",
+      "next": "after4:2",
+      "text": "可能会一直想",
+      "delay": 800,
+      "typing": false
     },
     "after4:2": {
-      "type": "message",
-      "text": "你这个“好的”很敷衍",
       "id": "after4:2",
+      "type": "message",
       "next": "after4:3",
-      "delay": 1000,
+      "text": "现在就觉得",
+      "delay": 800,
       "typing": false
     },
     "after4:3": {
-      "type": "reply",
-      "text": "那我应该说什么",
       "id": "after4:3",
-      "next": "after4:4"
+      "type": "message",
+      "next": "after4:4",
+      "text": "想那么久也没什么用",
+      "delay": 800,
+      "typing": false
     },
     "after4:4": {
-      "type": "message",
-      "text": "我不晓得",
       "id": "after4:4",
+      "type": "message",
       "next": "after4:5",
-      "delay": 1000,
+      "text": "该做的还是得做",
+      "delay": 800,
       "typing": false
     },
     "after4:5": {
-      "type": "message",
-      "text": "哈哈哈哈哈哈",
       "id": "after4:5",
+      "type": "reply",
+      "next": "after4:6",
+      "text": "现在确实比以前会处理一点了"
+    },
+    "after4:6": {
+      "id": "after4:6",
+      "type": "message",
+      "next": "after4:7",
+      "text": "可能长大了一点吧",
+      "delay": 800,
+      "typing": false
+    },
+    "after4:7": {
+      "id": "after4:7",
+      "type": "message",
       "next": "q5",
-      "delay": 700,
+      "text": "就一点",
+      "delay": 800,
+      "typing": false
+    },
+    "b5A:0": {
+      "id": "b5A:0",
+      "type": "message",
+      "next": "b5A:1",
+      "text": "你这么觉得啊",
+      "delay": 800,
+      "typing": false
+    },
+    "b5A:1": {
+      "id": "b5A:1",
+      "type": "reply",
+      "next": "b5A:2",
+      "text": "嗯"
+    },
+    "b5A:2": {
+      "id": "b5A:2",
+      "type": "message",
+      "next": "after5:0",
+      "text": "那挺好的",
+      "delay": 800,
+      "typing": false
+    },
+    "b5B:0": {
+      "id": "b5B:0",
+      "type": "message",
+      "next": "b5B:1",
+      "text": "对",
+      "delay": 800,
+      "typing": false
+    },
+    "b5B:1": {
+      "id": "b5B:1",
+      "type": "message",
+      "next": "after5:0",
+      "text": "我也是这么想的",
+      "delay": 800,
+      "typing": false
+    },
+    "b5C:0": {
+      "id": "b5C:0",
+      "type": "message",
+      "next": "b5C:1",
+      "text": "可能你看得比较久吧",
+      "delay": 800,
+      "typing": false
+    },
+    "b5C:1": {
+      "id": "b5C:1",
+      "type": "reply",
+      "next": "b5C:2",
+      "text": "也有可能"
+    },
+    "b5C:2": {
+      "id": "b5C:2",
+      "type": "message",
+      "next": "after5:0",
+      "text": "自己有时候反而感觉不到",
+      "delay": 800,
       "typing": false
     },
     "q5": {
@@ -870,202 +712,224 @@
       "options": [
         {
           "id": "5A",
-          "label": "不过你最近是不是挺忙的",
+          "label": "不止一点吧",
           "messages": [
-            "不过你最近是不是挺忙的"
+            "不止一点吧"
           ],
           "next": "b5A:0"
         },
         {
           "id": "5B",
-          "label": "感觉你最近状态排得挺满",
+          "label": "有进步就行",
           "messages": [
-            "感觉你最近状态排得挺满"
+            "有进步就行"
           ],
           "next": "b5B:0"
         },
         {
           "id": "5C",
-          "label": "所以你今天除了困还有别的事吗",
+          "label": "反正我觉得变化还挺明显的",
           "messages": [
-            "所以你今天除了困还有别的事吗"
+            "反正我觉得变化还挺明显的"
           ],
           "next": "b5C:0"
         }
       ]
     },
-    "b5A:0": {
-      "type": "message",
-      "text": "还好吧",
-      "id": "b5A:0",
-      "next": "b5A:1",
-      "delay": 1000,
-      "typing": false
-    },
-    "b5A:1": {
-      "type": "message",
-      "text": "就是事情有点多",
-      "id": "b5A:1",
-      "next": "b5A:2",
-      "delay": 700,
-      "typing": false
-    },
-    "b5A:2": {
-      "type": "reply",
-      "text": "看得出来",
-      "id": "b5A:2",
-      "next": "b5A:3"
-    },
-    "b5A:3": {
-      "type": "message",
-      "text": "这么明显吗",
-      "id": "b5A:3",
-      "next": "after5:0",
-      "delay": 1000,
-      "typing": false
-    },
-    "b5B:0": {
-      "type": "message",
-      "text": "有吗",
-      "id": "b5B:0",
-      "next": "b5B:1",
-      "delay": 1000,
-      "typing": false
-    },
-    "b5B:1": {
-      "type": "reply",
-      "text": "有一点",
-      "id": "b5B:1",
-      "next": "b5B:2"
-    },
-    "b5B:2": {
-      "type": "message",
-      "text": "可能吧",
-      "id": "b5B:2",
-      "next": "b5B:3",
-      "delay": 1000,
-      "typing": false
-    },
-    "b5B:3": {
-      "type": "message",
-      "text": "最近事情确实有点多",
-      "id": "b5B:3",
-      "next": "after5:0",
-      "delay": 700,
-      "typing": false
-    },
-    "b5C:0": {
-      "type": "message",
-      "text": "练习啊",
-      "id": "b5C:0",
-      "next": "b5C:1",
-      "delay": 1000,
-      "typing": false
-    },
-    "b5C:1": {
-      "type": "message",
-      "text": "吃饭啊",
-      "id": "b5C:1",
-      "next": "b5C:2",
-      "delay": 700,
-      "typing": false
-    },
-    "b5C:2": {
-      "type": "message",
-      "text": "然后回来",
-      "id": "b5C:2",
-      "next": "b5C:3",
-      "delay": 700,
-      "typing": false
-    },
-    "b5C:3": {
-      "type": "message",
-      "text": "然后现在在跟你讲话",
-      "id": "b5C:3",
-      "next": "b5C:4",
-      "delay": 700,
-      "typing": false
-    },
-    "b5C:4": {
-      "type": "reply",
-      "text": "好充实",
-      "id": "b5C:4",
-      "next": "b5C:5"
-    },
-    "b5C:5": {
-      "type": "message",
-      "text": "你是不是又在阴阳我",
-      "id": "b5C:5",
-      "next": "b5C:6",
-      "delay": 1000,
-      "typing": false
-    },
-    "b5C:6": {
-      "type": "reply",
-      "text": "没有",
-      "id": "b5C:6",
-      "next": "b5C:7"
-    },
-    "b5C:7": {
-      "type": "message",
-      "text": "我不信",
-      "id": "b5C:7",
-      "next": "b5C:8",
-      "delay": 1000,
-      "typing": false
-    },
-    "b5C:8": {
-      "type": "message",
-      "text": "哈哈哈哈哈哈",
-      "id": "b5C:8",
-      "next": "after5:0",
-      "delay": 700,
-      "typing": false
-    },
     "after5:0": {
-      "type": "reply",
-      "text": "那现在缓过来没",
       "id": "after5:0",
-      "next": "after5:1"
-    },
-    "after5:1": {
       "type": "message",
-      "text": "差不多",
-      "id": "after5:1",
-      "next": "after5:2",
-      "delay": 1000,
-      "typing": false
-    },
-    "after5:2": {
-      "type": "message",
-      "text": "洗完澡就好多了",
-      "id": "after5:2",
-      "next": "after5:3",
-      "delay": 700,
-      "typing": false
-    },
-    "after5:3": {
-      "type": "message",
-      "text": "主要刚结束的时候真的很累",
-      "id": "after5:3",
-      "next": "after5:4",
-      "delay": 1700,
+      "next": "after5:1",
+      "text": "但是唱歌这些还是有好多东西要练",
+      "delay": 2000,
       "typing": true
     },
+    "after5:1": {
+      "id": "after5:1",
+      "type": "reply",
+      "next": "after5:2",
+      "text": "我知道"
+    },
+    "after5:2": {
+      "id": "after5:2",
+      "type": "reply",
+      "next": "after5:3",
+      "text": "但进步了就是进步了"
+    },
+    "after5:3": {
+      "id": "after5:3",
+      "type": "reply",
+      "next": "after5:4",
+      "text": "偶尔也可以好好夸夸自己"
+    },
     "after5:4": {
-      "type": "message",
-      "text": "现在还好",
       "id": "after5:4",
+      "type": "message",
       "next": "after5:5",
-      "delay": 700,
+      "text": "我有啊",
+      "delay": 800,
       "typing": false
     },
     "after5:5": {
-      "type": "message",
-      "text": "你今天呢",
       "id": "after5:5",
+      "type": "message",
+      "next": "after5:6",
+      "text": "我又没说自己没进步",
+      "delay": 800,
+      "typing": false
+    },
+    "after5:6": {
+      "id": "after5:6",
+      "type": "message",
+      "next": "after5:7",
+      "text": "就是还有很多东西想学",
+      "delay": 800,
+      "typing": false
+    },
+    "after5:7": {
+      "id": "after5:7",
+      "type": "reply",
+      "next": "after5:8",
+      "text": "那就好"
+    },
+    "after5:8": {
+      "id": "after5:8",
+      "type": "reply",
+      "next": "after5:9",
+      "text": "我还怕你每次别人一夸你"
+    },
+    "after5:9": {
+      "id": "after5:9",
+      "type": "reply",
+      "next": "after5:10",
+      "text": "你就只想着自己哪里还不够"
+    },
+    "after5:10": {
+      "id": "after5:10",
+      "type": "message",
+      "next": "after5:11",
+      "text": "也没有",
+      "delay": 800,
+      "typing": false
+    },
+    "after5:11": {
+      "id": "after5:11",
+      "type": "message",
+      "next": "after5:12",
+      "text": "被夸还是会开心的",
+      "delay": 800,
+      "typing": false
+    },
+    "after5:12": {
+      "id": "after5:12",
+      "type": "reply",
+      "next": "after5:13",
+      "text": "那就多开心一会儿"
+    },
+    "after5:13": {
+      "id": "after5:13",
+      "type": "pause",
+      "next": "after5:14",
+      "delay": 2000,
+      "typing": false
+    },
+    "after5:14": {
+      "id": "after5:14",
+      "type": "message",
+      "next": "after5:15",
+      "text": "嘿嘿",
+      "delay": 0,
+      "typing": false
+    },
+    "after5:15": {
+      "id": "after5:15",
+      "type": "message",
+      "next": "after5:16",
+      "text": "好吧",
+      "delay": 800,
+      "typing": false
+    },
+    "after5:16": {
+      "id": "after5:16",
+      "type": "pause",
+      "next": "after5:17",
+      "delay": 2000,
+      "typing": false
+    },
+    "after5:17": {
+      "id": "after5:17",
+      "type": "message",
       "next": "q6",
-      "delay": 700,
+      "text": "你今天呢",
+      "delay": 0,
+      "typing": false
+    },
+    "b6A:0": {
+      "id": "b6A:0",
+      "type": "message",
+      "next": "b6A:1",
+      "text": "那你也早点休息",
+      "delay": 800,
+      "typing": false
+    },
+    "b6A:1": {
+      "id": "b6A:1",
+      "type": "reply",
+      "next": "b6A:2",
+      "text": "知道"
+    },
+    "b6A:2": {
+      "id": "b6A:2",
+      "type": "message",
+      "next": "b6A:3",
+      "text": "别光知道",
+      "delay": 800,
+      "typing": false
+    },
+    "b6A:3": {
+      "id": "b6A:3",
+      "type": "message",
+      "next": "after6:0",
+      "text": "等会儿又不睡",
+      "delay": 800,
+      "typing": false
+    },
+    "b6B:0": {
+      "id": "b6B:0",
+      "type": "message",
+      "next": "b6B:1",
+      "text": "那挺好的",
+      "delay": 800,
+      "typing": false
+    },
+    "b6B:1": {
+      "id": "b6B:1",
+      "type": "message",
+      "next": "after6:0",
+      "text": "普通一点也不错",
+      "delay": 800,
+      "typing": false
+    },
+    "b6C:0": {
+      "id": "b6C:0",
+      "type": "message",
+      "next": "b6C:1",
+      "text": "羡慕",
+      "delay": 800,
+      "typing": false
+    },
+    "b6C:1": {
+      "id": "b6C:1",
+      "type": "reply",
+      "next": "b6C:2",
+      "text": "你也会有闲的时候"
+    },
+    "b6C:2": {
+      "id": "b6C:2",
+      "type": "message",
+      "next": "after6:0",
+      "text": "希望吧",
+      "delay": 800,
       "typing": false
     },
     "q6": {
@@ -1074,140 +938,122 @@
       "options": [
         {
           "id": "6A",
-          "label": "我今天也挺累的",
+          "label": "也有点累",
           "messages": [
-            "我今天也挺累的"
+            "也有点累"
           ],
           "next": "b6A:0"
         },
         {
           "id": "6B",
-          "label": "就普通的一天",
+          "label": "普普通通",
           "messages": [
-            "就普通的一天"
+            "普普通通"
           ],
           "next": "b6B:0"
         },
         {
           "id": "6C",
-          "label": "没什么特别的",
+          "label": "今天还挺闲的",
           "messages": [
-            "没什么特别的"
+            "今天还挺闲的"
           ],
           "next": "b6C:0"
         }
       ]
     },
-    "b6A:0": {
-      "type": "message",
-      "text": "你干嘛了",
-      "id": "b6A:0",
-      "next": "b6A:1",
-      "delay": 1000,
-      "typing": false
-    },
-    "b6A:1": {
-      "type": "reply",
-      "text": "一堆乱七八糟的事",
-      "id": "b6A:1",
-      "next": "b6A:2"
-    },
-    "b6A:2": {
-      "type": "message",
-      "text": "那你还不早点睡",
-      "id": "b6A:2",
-      "next": "b6A:3",
-      "delay": 1000,
-      "typing": false
-    },
-    "b6A:3": {
-      "type": "reply",
-      "text": "你自己都没睡",
-      "id": "b6A:3",
-      "next": "b6A:4"
-    },
-    "b6A:4": {
-      "type": "message",
-      "text": "我跟你又不一样",
-      "id": "b6A:4",
-      "next": "b6A:5",
-      "delay": 1000,
-      "typing": false
-    },
-    "b6A:5": {
-      "type": "reply",
-      "text": "哪里不一样",
-      "id": "b6A:5",
-      "next": "b6A:6"
-    },
-    "b6A:6": {
-      "type": "message",
-      "text": "……",
-      "id": "b6A:6",
-      "next": "b6A:7",
-      "delay": 1000,
-      "typing": false
-    },
-    "b6A:7": {
-      "type": "message",
-      "text": "我不晓得",
-      "id": "b6A:7",
-      "next": "b6A:8",
-      "delay": 700,
-      "typing": false
-    },
-    "b6A:8": {
-      "type": "message",
-      "text": "反正你早点睡",
-      "id": "b6A:8",
-      "next": "after6:0",
-      "delay": 700,
-      "typing": false
-    },
-    "b6B:0": {
-      "type": "message",
-      "text": "那挺好",
-      "id": "b6B:0",
-      "next": "b6B:1",
-      "delay": 1000,
-      "typing": false
-    },
-    "b6B:1": {
-      "type": "message",
-      "text": "有时候普通一点也挺好的",
-      "id": "b6B:1",
-      "next": "after6:0",
-      "delay": 700,
-      "typing": false
-    },
-    "b6C:0": {
-      "type": "message",
-      "text": "那不是挺好",
-      "id": "b6C:0",
-      "next": "b6C:1",
-      "delay": 1000,
-      "typing": false
-    },
-    "b6C:1": {
-      "type": "message",
-      "text": "有时候没什么特别的也挺好的",
-      "id": "b6C:1",
-      "next": "after6:0",
-      "delay": 1700,
-      "typing": true
-    },
     "after6:0": {
-      "type": "reply",
-      "text": "你最近感觉还挺好的",
       "id": "after6:0",
-      "next": "after6:1"
+      "type": "message",
+      "next": "after6:1",
+      "text": "我明天还得早起",
+      "delay": 800,
+      "typing": false
     },
     "after6:1": {
-      "type": "message",
-      "text": "什么叫挺好的",
       "id": "after6:1",
+      "type": "reply",
+      "next": "after6:2",
+      "text": "听起来不是很想面对"
+    },
+    "after6:2": {
+      "id": "after6:2",
+      "type": "message",
+      "next": "after6:3",
+      "text": "是不太想",
+      "delay": 800,
+      "typing": false
+    },
+    "after6:3": {
+      "id": "after6:3",
+      "type": "message",
       "next": "q7",
-      "delay": 1000,
+      "text": "但是也没办法",
+      "delay": 800,
+      "typing": false
+    },
+    "b7A:0": {
+      "id": "b7A:0",
+      "type": "message",
+      "next": "b7A:1",
+      "text": "嗯",
+      "delay": 800,
+      "typing": false
+    },
+    "b7A:1": {
+      "id": "b7A:1",
+      "type": "message",
+      "next": "after7:0",
+      "text": "等会儿就睡",
+      "delay": 800,
+      "typing": false
+    },
+    "b7B:0": {
+      "id": "b7B:0",
+      "type": "message",
+      "next": "b7B:1",
+      "text": "应该吧",
+      "delay": 800,
+      "typing": false
+    },
+    "b7B:1": {
+      "id": "b7B:1",
+      "type": "message",
+      "next": "b7B:2",
+      "text": "希望不要太早",
+      "delay": 800,
+      "typing": false
+    },
+    "b7B:2": {
+      "id": "b7B:2",
+      "type": "message",
+      "next": "after7:0",
+      "text": "虽然感觉不太可能",
+      "delay": 800,
+      "typing": false
+    },
+    "b7C:0": {
+      "id": "b7C:0",
+      "type": "message",
+      "next": "b7C:1",
+      "text": "也对",
+      "delay": 800,
+      "typing": false
+    },
+    "b7C:1": {
+      "id": "b7C:1",
+      "type": "message",
+      "next": "b7C:2",
+      "text": "想了也改变不了",
+      "delay": 800,
+      "typing": false
+    },
+    "b7C:2": {
+      "id": "b7C:2",
+      "type": "message",
+      "next": "after7:0",
+      "text": "明天再说",
+      "delay": 800,
       "typing": false
     },
     "q7": {
@@ -1216,295 +1062,184 @@
       "options": [
         {
           "id": "7A",
-          "label": "就是感觉状态比以前稳很多",
+          "label": "那今天别拖太晚",
           "messages": [
-            "就是感觉状态比以前稳很多"
+            "那今天别拖太晚"
           ],
           "next": "b7A:0"
         },
         {
           "id": "7B",
-          "label": "感觉你现在真的比以前厉害不少",
+          "label": "明天又是忙的一天",
           "messages": [
-            "感觉你现在真的比以前厉害不少"
+            "明天又是忙的一天"
           ],
           "next": "b7B:0"
         },
         {
           "id": "7C",
-          "label": "说不上来，反正就是不太一样了",
+          "label": "先别想明天了",
           "messages": [
-            "说不上来",
-            "反正就是不太一样了"
+            "先别想明天了"
           ],
           "next": "b7C:0"
         }
       ]
     },
-    "b7A:0": {
-      "type": "message",
-      "text": "有吗",
-      "id": "b7A:0",
-      "next": "b7A:1",
-      "delay": 1000,
-      "typing": false
-    },
-    "b7A:1": {
-      "type": "reply",
-      "text": "有啊",
-      "id": "b7A:1",
-      "next": "b7A:2"
-    },
-    "b7A:2": {
-      "type": "message",
-      "text": "嘿嘿",
-      "id": "b7A:2",
-      "next": "b7A:3",
-      "delay": 1000,
-      "typing": false
-    },
-    "b7A:3": {
-      "type": "message",
-      "text": "那挺好的",
-      "id": "b7A:3",
-      "next": "after7:0",
-      "delay": 700,
-      "typing": false
-    },
-    "b7B:0": {
-      "type": "message",
-      "text": "哈哈哈哈哈哈",
-      "id": "b7B:0",
-      "next": "b7B:1",
-      "delay": 1000,
-      "typing": false
-    },
-    "b7B:1": {
-      "type": "message",
-      "text": "这么直接",
-      "id": "b7B:1",
-      "next": "b7B:2",
-      "delay": 700,
-      "typing": false
-    },
-    "b7B:2": {
-      "type": "reply",
-      "text": "夸你还不乐意",
-      "id": "b7B:2",
-      "next": "b7B:3"
-    },
-    "b7B:3": {
-      "type": "message",
-      "text": "乐意啊",
-      "id": "b7B:3",
-      "next": "b7B:4",
-      "delay": 1000,
-      "typing": false
-    },
-    "b7B:4": {
-      "type": "message",
-      "text": "当然乐意",
-      "id": "b7B:4",
-      "next": "b7B:5",
-      "delay": 700,
-      "typing": false
-    },
-    "b7B:5": {
-      "type": "message",
-      "text": "嘿嘿",
-      "id": "b7B:5",
-      "next": "after7:0",
-      "delay": 700,
-      "typing": false
-    },
-    "b7C:0": {
-      "type": "message",
-      "text": "哪里不一样",
-      "id": "b7C:0",
-      "next": "b7C:1",
-      "delay": 1000,
-      "typing": false
-    },
-    "b7C:1": {
-      "type": "reply",
-      "text": "就是感觉",
-      "id": "b7C:1",
-      "next": "b7C:2"
-    },
-    "b7C:2": {
-      "type": "message",
-      "text": "你这个形容跟没形容一样",
-      "id": "b7C:2",
-      "next": "b7C:3",
-      "delay": 1000,
-      "typing": false
-    },
-    "b7C:3": {
-      "type": "reply",
-      "text": "那你别问",
-      "id": "b7C:3",
-      "next": "b7C:4"
-    },
-    "b7C:4": {
-      "type": "message",
-      "text": "哈哈哈哈哈哈",
-      "id": "b7C:4",
-      "next": "b7C:5",
-      "delay": 1000,
-      "typing": false
-    },
-    "b7C:5": {
-      "type": "message",
-      "text": "行",
-      "id": "b7C:5",
-      "next": "after7:0",
-      "delay": 700,
-      "typing": false
-    },
     "after7:0": {
-      "type": "message",
-      "text": "但是我自己也觉得",
       "id": "after7:0",
+      "type": "pause",
       "next": "after7:1",
-      "delay": 1000,
+      "delay": 4000,
       "typing": false
     },
     "after7:1": {
-      "type": "message",
-      "text": "现在比以前好一点了",
       "id": "after7:1",
+      "type": "message",
       "next": "after7:2",
-      "delay": 700,
-      "typing": false
-    },
-    "after7:2": {
-      "type": "message",
-      "text": "有些东西慢慢找到感觉了",
-      "id": "after7:2",
-      "next": "after7:3",
-      "delay": 700,
-      "typing": false
-    },
-    "after7:3": {
-      "type": "message",
-      "text": "但是还是有好多要练",
-      "id": "after7:3",
-      "next": "after7:4",
-      "delay": 700,
-      "typing": false
-    },
-    "after7:4": {
-      "type": "reply",
-      "text": "我就知道你后面一定要加这句",
-      "id": "after7:4",
-      "next": "after7:5"
-    },
-    "after7:5": {
-      "type": "message",
-      "text": "本来就是",
-      "id": "after7:5",
-      "next": "after7:6",
-      "delay": 1000,
-      "typing": false
-    },
-    "after7:6": {
-      "type": "reply",
-      "text": "夸你一句怎么这么难",
-      "id": "after7:6",
-      "next": "after7:7"
-    },
-    "after7:7": {
-      "type": "message",
-      "text": "我不是接受了吗",
-      "id": "after7:7",
-      "next": "after7:8",
-      "delay": 1000,
-      "typing": false
-    },
-    "after7:8": {
-      "type": "message",
-      "text": "我很开心啊",
-      "id": "after7:8",
-      "next": "after7:9",
-      "delay": 700,
-      "typing": false
-    },
-    "after7:9": {
-      "type": "message",
-      "text": "但是也不能因为别人夸一下就不练了吧",
-      "id": "after7:9",
-      "next": "after7:10",
-      "delay": 1700,
-      "typing": true
-    },
-    "after7:10": {
-      "type": "reply",
-      "text": "倒也是",
-      "id": "after7:10",
-      "next": "after7:11"
-    },
-    "after7:11": {
-      "type": "message",
-      "text": "对嘛",
-      "id": "after7:11",
-      "next": "after7:12",
-      "delay": 1000,
-      "typing": false
-    },
-    "after7:12": {
-      "type": "pause",
-      "delay": 3000,
-      "typing": false,
-      "id": "after7:12",
-      "next": "after7:13"
-    },
-    "after7:13": {
-      "type": "reply",
-      "text": "不过我刚刚说的不只是这些",
-      "id": "after7:13",
-      "next": "after7:14"
-    },
-    "after7:14": {
-      "type": "message",
-      "text": "？",
-      "id": "after7:14",
-      "next": "after7:15",
-      "delay": 1000,
-      "typing": false
-    },
-    "after7:15": {
-      "type": "reply",
-      "text": "不只是唱歌或者舞台",
-      "id": "after7:15",
-      "next": "after7:16"
-    },
-    "after7:16": {
-      "type": "reply",
-      "text": "感觉你这个人也比以前稳很多",
-      "id": "after7:16",
-      "next": "after7:17"
-    },
-    "after7:17": {
-      "type": "pause",
-      "delay": 2000,
-      "typing": true,
-      "id": "after7:17",
-      "next": "after7:18"
-    },
-    "after7:18": {
-      "type": "message",
-      "text": "哈哈哈哈哈哈",
-      "id": "after7:18",
-      "next": "after7:19",
+      "text": "诶",
       "delay": 0,
       "typing": false
     },
-    "after7:19": {
+    "after7:2": {
+      "id": "after7:2",
       "type": "message",
-      "text": "怎么突然开始讲这些",
-      "id": "after7:19",
+      "next": "after7:3",
+      "text": "你刚刚说我现在比以前稳一点",
+      "delay": 2000,
+      "typing": true
+    },
+    "after7:3": {
+      "id": "after7:3",
+      "type": "reply",
+      "next": "after7:4",
+      "text": "嗯"
+    },
+    "after7:4": {
+      "id": "after7:4",
+      "type": "message",
+      "next": "after7:5",
+      "text": "我刚刚想了想",
+      "delay": 800,
+      "typing": false
+    },
+    "after7:5": {
+      "id": "after7:5",
+      "type": "message",
+      "next": "after7:6",
+      "text": "可能确实是",
+      "delay": 800,
+      "typing": false
+    },
+    "after7:6": {
+      "id": "after7:6",
+      "type": "message",
+      "next": "after7:7",
+      "text": "以前有些事情会觉得特别大",
+      "delay": 800,
+      "typing": false
+    },
+    "after7:7": {
+      "id": "after7:7",
+      "type": "message",
+      "next": "after7:8",
+      "text": "现在再回头看",
+      "delay": 800,
+      "typing": false
+    },
+    "after7:8": {
+      "id": "after7:8",
+      "type": "message",
       "next": "q8",
-      "delay": 700,
+      "text": "好像也就那样",
+      "delay": 800,
+      "typing": false
+    },
+    "b8A:0": {
+      "id": "b8A:0",
+      "type": "pause",
+      "next": "b8A:1",
+      "delay": 2000,
+      "typing": false
+    },
+    "b8A:1": {
+      "id": "b8A:1",
+      "type": "message",
+      "next": "b8A:2",
+      "text": "嗯",
+      "delay": 0,
+      "typing": false
+    },
+    "b8A:2": {
+      "id": "b8A:2",
+      "type": "message",
+      "next": "b8A:3",
+      "text": "也是",
+      "delay": 800,
+      "typing": false
+    },
+    "b8A:3": {
+      "id": "b8A:3",
+      "type": "message",
+      "next": "b8A:4",
+      "text": "当时觉得难也是真的",
+      "delay": 800,
+      "typing": false
+    },
+    "b8A:4": {
+      "id": "b8A:4",
+      "type": "message",
+      "next": "after8:0",
+      "text": "现在觉得没那么难也是真的",
+      "delay": 800,
+      "typing": false
+    },
+    "b8B:0": {
+      "id": "b8B:0",
+      "type": "message",
+      "next": "b8B:1",
+      "text": "嗯",
+      "delay": 800,
+      "typing": false
+    },
+    "b8B:1": {
+      "id": "b8B:1",
+      "type": "message",
+      "next": "b8B:2",
+      "text": "反正都走过来了",
+      "delay": 800,
+      "typing": false
+    },
+    "b8B:2": {
+      "id": "b8B:2",
+      "type": "message",
+      "next": "after8:0",
+      "text": "以后还有以后的事",
+      "delay": 800,
+      "typing": false
+    },
+    "b8C:0": {
+      "id": "b8C:0",
+      "type": "message",
+      "next": "b8C:1",
+      "text": "可能吧",
+      "delay": 800,
+      "typing": false
+    },
+    "b8C:1": {
+      "id": "b8C:1",
+      "type": "message",
+      "next": "b8C:2",
+      "text": "慢慢学嘛",
+      "delay": 800,
+      "typing": false
+    },
+    "b8C:2": {
+      "id": "b8C:2",
+      "type": "message",
+      "next": "after8:0",
+      "text": "我现在也还有好多东西不会",
+      "delay": 800,
       "typing": false
     },
     "q8": {
@@ -1513,396 +1248,126 @@
       "options": [
         {
           "id": "8A",
-          "label": "突然想到就说了",
+          "label": "因为当时的你也是真的觉得很难",
           "messages": [
-            "突然想到就说了"
+            "因为当时的你也是真的觉得很难"
           ],
           "next": "b8A:0"
         },
         {
           "id": "8B",
-          "label": "不爱听算了",
+          "label": "能走过来就已经很好了",
           "messages": [
-            "不爱听算了"
+            "能走过来就已经很好了"
           ],
           "next": "b8B:0"
         },
         {
           "id": "8C",
-          "label": "因为真的挺明显的",
+          "label": "人本来就是这样一点点长大的吧",
           "messages": [
-            "因为真的挺明显的"
+            "人本来就是这样一点点长大的吧"
           ],
           "next": "b8C:0"
         }
       ]
     },
-    "b8A:0": {
-      "type": "message",
-      "text": "哦",
-      "id": "b8A:0",
-      "next": "b8A:1",
-      "delay": 1000,
-      "typing": false
-    },
-    "b8A:1": {
-      "type": "message",
-      "text": "那你继续",
-      "id": "b8A:1",
-      "next": "b8A:2",
-      "delay": 700,
-      "typing": false
-    },
-    "b8A:2": {
-      "type": "reply",
-      "text": "？",
-      "id": "b8A:2",
-      "next": "b8A:3"
-    },
-    "b8A:3": {
-      "type": "reply",
-      "text": "怎么还点上了",
-      "id": "b8A:3",
-      "next": "b8A:4"
-    },
-    "b8A:4": {
-      "type": "message",
-      "text": "不是你要说的吗哈哈哈哈",
-      "id": "b8A:4",
-      "next": "after8:0",
-      "delay": 1000,
-      "typing": false
-    },
-    "b8B:0": {
-      "type": "message",
-      "text": "我又没说不爱听",
-      "id": "b8B:0",
-      "next": "b8B:1",
-      "delay": 1000,
-      "typing": false
-    },
-    "b8B:1": {
-      "type": "message",
-      "text": "你怎么还急了",
-      "id": "b8B:1",
-      "next": "b8B:2",
-      "delay": 700,
-      "typing": false
-    },
-    "b8B:2": {
-      "type": "reply",
-      "text": "没急",
-      "id": "b8B:2",
-      "next": "b8B:3"
-    },
-    "b8B:3": {
-      "type": "message",
-      "text": "没急就好",
-      "id": "b8B:3",
-      "next": "b8B:4",
-      "delay": 1000,
-      "typing": false
-    },
-    "b8B:4": {
-      "type": "message",
-      "text": "那你说",
-      "id": "b8B:4",
-      "next": "after8:0",
-      "delay": 700,
-      "typing": false
-    },
-    "b8C:0": {
-      "type": "message",
-      "text": "有那么明显吗",
-      "id": "b8C:0",
-      "next": "b8C:1",
-      "delay": 1000,
-      "typing": false
-    },
-    "b8C:1": {
-      "type": "reply",
-      "text": "对看了你很久的人来说还挺明显的",
-      "id": "b8C:1",
-      "next": "b8C:2"
-    },
-    "b8C:2": {
-      "type": "pause",
-      "delay": 2000,
-      "typing": false,
-      "id": "b8C:2",
-      "next": "b8C:3"
-    },
-    "b8C:3": {
-      "type": "message",
-      "text": "哦",
-      "id": "b8C:3",
-      "next": "b8C:4",
-      "delay": 0,
-      "typing": false
-    },
-    "b8C:4": {
-      "type": "message",
-      "text": "那可能确实有一点吧",
-      "id": "b8C:4",
-      "next": "after8:0",
-      "delay": 700,
-      "typing": false
-    },
     "after8:0": {
-      "type": "reply",
-      "text": "以前感觉你很多情绪都比较写在脸上",
       "id": "after8:0",
-      "next": "after8:1"
+      "type": "reply",
+      "next": "after8:1",
+      "text": "反正不用急"
     },
     "after8:1": {
-      "type": "reply",
-      "text": "现在好像更知道自己该怎么处理了",
       "id": "after8:1",
-      "next": "after8:2"
+      "type": "message",
+      "next": "after8:2",
+      "text": "我知道",
+      "delay": 800,
+      "typing": false
     },
     "after8:2": {
-      "type": "message",
-      "text": "……",
       "id": "after8:2",
+      "type": "message",
       "next": "after8:3",
-      "delay": 1000,
-      "typing": false
+      "text": "但是还是想让自己再厉害一点",
+      "delay": 2000,
+      "typing": true
     },
     "after8:3": {
-      "type": "message",
-      "text": "可能是长大了吧",
       "id": "after8:3",
+      "type": "reply",
       "next": "after8:4",
-      "delay": 700,
-      "typing": false
+      "text": "这个倒很像你"
     },
     "after8:4": {
-      "type": "message",
-      "text": "人总要长大撒",
       "id": "after8:4",
+      "type": "message",
       "next": "after8:5",
-      "delay": 700,
+      "text": "有吗",
+      "delay": 800,
       "typing": false
     },
     "after8:5": {
-      "type": "reply",
-      "text": "也是",
       "id": "after8:5",
-      "next": "after8:6"
+      "type": "reply",
+      "next": "after8:6",
+      "text": "有"
     },
     "after8:6": {
-      "type": "message",
-      "text": "而且",
       "id": "after8:6",
+      "type": "message",
       "next": "after8:7",
-      "delay": 1000,
+      "text": "那就继续努力一下",
+      "delay": 800,
       "typing": false
     },
     "after8:7": {
-      "type": "pause",
-      "delay": 2000,
-      "typing": false,
       "id": "after8:7",
-      "next": "after8:8"
-    },
-    "after8:8": {
       "type": "message",
-      "text": "很多事情也没办法一直想",
-      "id": "after8:8",
-      "next": "after8:9",
-      "delay": 0,
+      "next": "memory",
+      "text": "看看明年能不能比现在再好一点",
+      "delay": 2000,
+      "typing": true
+    },
+    "b9A:0": {
+      "id": "b9A:0",
+      "type": "message",
+      "next": "after9:0",
+      "text": "知道啦",
+      "delay": 800,
       "typing": false
     },
-    "after8:9": {
+    "b9B:0": {
+      "id": "b9B:0",
       "type": "message",
-      "text": "该干嘛还是得干嘛",
-      "id": "after8:9",
-      "next": "after8:10",
-      "delay": 700,
-      "typing": false
-    },
-    "after8:10": {
-      "type": "reply",
+      "next": "b9B:1",
       "text": "嗯",
-      "id": "after8:10",
-      "next": "after8:11"
-    },
-    "after8:11": {
-      "type": "message",
-      "text": "不然呢",
-      "id": "after8:11",
-      "next": "after8:12",
-      "delay": 1000,
+      "delay": 800,
       "typing": false
     },
-    "after8:12": {
+    "b9B:1": {
+      "id": "b9B:1",
       "type": "message",
-      "text": "每天坐在那里想",
-      "id": "after8:12",
-      "next": "after8:13",
-      "delay": 700,
+      "next": "after9:0",
+      "text": "下次再说",
+      "delay": 800,
       "typing": false
     },
-    "after8:13": {
+    "b9C:0": {
+      "id": "b9C:0",
       "type": "message",
-      "text": "那也太累了",
-      "id": "after8:13",
-      "next": "after8:14",
-      "delay": 700,
+      "next": "b9C:1",
+      "text": "好",
+      "delay": 800,
       "typing": false
     },
-    "after8:14": {
-      "type": "reply",
-      "text": "你现在还挺会讲道理",
-      "id": "after8:14",
-      "next": "after8:15"
-    },
-    "after8:15": {
+    "b9C:1": {
+      "id": "b9C:1",
       "type": "message",
-      "text": "我一直很会",
-      "id": "after8:15",
-      "next": "after8:16",
-      "delay": 1000,
-      "typing": false
-    },
-    "after8:16": {
-      "type": "reply",
-      "text": "好的",
-      "id": "after8:16",
-      "next": "after8:17"
-    },
-    "after8:17": {
-      "type": "message",
-      "text": "你又来",
-      "id": "after8:17",
-      "next": "after8:18",
-      "delay": 1000,
-      "typing": false
-    },
-    "after8:18": {
-      "type": "message",
-      "text": "哈哈哈哈哈哈",
-      "id": "after8:18",
-      "next": "after8:19",
-      "delay": 700,
-      "typing": false
-    },
-    "after8:19": {
-      "type": "message",
-      "text": "诶",
-      "id": "after8:19",
-      "next": "after8:20",
-      "delay": 700,
-      "typing": false
-    },
-    "after8:20": {
-      "type": "message",
-      "text": "我突然想到",
-      "id": "after8:20",
-      "next": "after8:21",
-      "delay": 700,
-      "typing": false
-    },
-    "after8:21": {
-      "type": "message",
-      "text": "我明天好像又要早起",
-      "id": "after8:21",
-      "next": "after8:22",
-      "delay": 700,
-      "typing": false
-    },
-    "after8:22": {
-      "type": "reply",
-      "text": "终于想起来了",
-      "id": "after8:22",
-      "next": "after8:23"
-    },
-    "after8:23": {
-      "type": "message",
-      "text": "……",
-      "id": "after8:23",
-      "next": "after8:24",
-      "delay": 1000,
-      "typing": false
-    },
-    "after8:24": {
-      "type": "message",
-      "text": "你不要提醒我",
-      "id": "after8:24",
-      "next": "after8:25",
-      "delay": 700,
-      "typing": false
-    },
-    "after8:25": {
-      "type": "reply",
-      "text": "刚刚是谁说该干嘛就干嘛",
-      "id": "after8:25",
-      "next": "after8:26"
-    },
-    "after8:26": {
-      "type": "message",
-      "text": "我刚刚",
-      "id": "after8:26",
-      "next": "after8:27",
-      "delay": 1000,
-      "typing": false
-    },
-    "after8:27": {
-      "type": "message",
-      "text": "现在不是了",
-      "id": "after8:27",
-      "next": "after8:28",
-      "delay": 700,
-      "typing": false
-    },
-    "after8:28": {
-      "type": "reply",
-      "text": "这么快",
-      "id": "after8:28",
-      "next": "after8:29"
-    },
-    "after8:29": {
-      "type": "message",
-      "text": "人是会变的",
-      "id": "after8:29",
-      "next": "after8:30",
-      "delay": 1000,
-      "typing": false
-    },
-    "after8:30": {
-      "type": "reply",
-      "text": "你刚刚才说自己长大了",
-      "id": "after8:30",
-      "next": "after8:31"
-    },
-    "after8:31": {
-      "type": "message",
-      "text": "长大了也不想早起啊",
-      "id": "after8:31",
-      "next": "after8:32",
-      "delay": 1000,
-      "typing": false
-    },
-    "after8:32": {
-      "type": "reply",
-      "text": "有道理",
-      "id": "after8:32",
-      "next": "after8:33"
-    },
-    "after8:33": {
-      "type": "message",
-      "text": "对吧",
-      "id": "after8:33",
-      "next": "after8:34",
-      "delay": 1000,
-      "typing": false
-    },
-    "after8:34": {
-      "type": "message",
-      "text": "哈哈哈哈哈哈",
-      "id": "after8:34",
-      "next": "q9",
-      "delay": 700,
+      "next": "after9:0",
+      "text": "不拖了",
+      "delay": 800,
       "typing": false
     },
     "q9": {
@@ -1911,906 +1376,115 @@
       "options": [
         {
           "id": "9A",
-          "label": "那你现在赶紧去睡",
+          "label": "那你快睡",
           "messages": [
-            "那你现在赶紧去睡"
+            "那你快睡"
           ],
           "next": "b9A:0"
         },
         {
           "id": "9B",
-          "label": "明天几点起",
+          "label": "好，今天先到这里",
           "messages": [
-            "明天几点起"
+            "好，今天先到这里"
           ],
           "next": "b9B:0"
         },
         {
           "id": "9C",
-          "label": "所以你为什么还在这里聊天",
+          "label": "快去吧",
           "messages": [
-            "所以你为什么还在这里聊天"
+            "快去吧"
           ],
           "next": "b9C:0"
         }
       ]
     },
-    "b9A:0": {
-      "type": "message",
-      "text": "再等一下",
-      "id": "b9A:0",
-      "next": "b9A:1",
-      "delay": 1000,
-      "typing": false
-    },
-    "b9A:1": {
-      "type": "reply",
-      "text": "等什么",
-      "id": "b9A:1",
-      "next": "b9A:2"
-    },
-    "b9A:2": {
-      "type": "message",
-      "text": "不知道",
-      "id": "b9A:2",
-      "next": "b9A:3",
-      "delay": 1000,
-      "typing": false
-    },
-    "b9A:3": {
-      "type": "reply",
-      "text": "？",
-      "id": "b9A:3",
-      "next": "b9A:4"
-    },
-    "b9A:4": {
-      "type": "message",
-      "text": "就是还不想睡",
-      "id": "b9A:4",
-      "next": "b9A:5",
-      "delay": 1000,
-      "typing": false
-    },
-    "b9A:5": {
-      "type": "message",
-      "text": "等困了再睡",
-      "id": "b9A:5",
-      "next": "after9:0",
-      "delay": 700,
-      "typing": false
-    },
-    "b9B:0": {
-      "type": "message",
-      "text": "……",
-      "id": "b9B:0",
-      "next": "b9B:1",
-      "delay": 1000,
-      "typing": false
-    },
-    "b9B:1": {
-      "type": "message",
-      "text": "我不想说",
-      "id": "b9B:1",
-      "next": "b9B:2",
-      "delay": 700,
-      "typing": false
-    },
-    "b9B:2": {
-      "type": "reply",
-      "text": "看来很早",
-      "id": "b9B:2",
-      "next": "b9B:3"
-    },
-    "b9B:3": {
-      "type": "message",
-      "text": "你知道就行了",
-      "id": "b9B:3",
-      "next": "b9B:4",
-      "delay": 1000,
-      "typing": false
-    },
-    "b9B:4": {
-      "type": "reply",
-      "text": "那还不睡",
-      "id": "b9B:4",
-      "next": "b9B:5"
-    },
-    "b9B:5": {
-      "type": "message",
-      "text": "马上",
-      "id": "b9B:5",
-      "next": "b9B:6",
-      "delay": 1000,
-      "typing": false
-    },
-    "b9B:6": {
-      "type": "message",
-      "text": "真的马上",
-      "id": "b9B:6",
-      "next": "after9:0",
-      "delay": 700,
-      "typing": false
-    },
-    "b9C:0": {
-      "type": "message",
-      "text": "我怎么知道",
-      "id": "b9C:0",
-      "next": "b9C:1",
-      "delay": 1000,
-      "typing": false
-    },
-    "b9C:1": {
-      "type": "message",
-      "text": "聊着聊着就这么久了",
-      "id": "b9C:1",
-      "next": "b9C:2",
-      "delay": 700,
-      "typing": false
-    },
-    "b9C:2": {
-      "type": "reply",
-      "text": "不是你先找我的",
-      "id": "b9C:2",
-      "next": "b9C:3"
-    },
-    "b9C:3": {
-      "type": "message",
-      "text": "哦",
-      "id": "b9C:3",
-      "next": "b9C:4",
-      "delay": 1000,
-      "typing": false
-    },
-    "b9C:4": {
-      "type": "message",
-      "text": "对哦",
-      "id": "b9C:4",
-      "next": "b9C:5",
-      "delay": 700,
-      "typing": false
-    },
-    "b9C:5": {
-      "type": "message",
-      "text": "哈哈哈哈哈哈",
-      "id": "b9C:5",
-      "next": "after9:0",
-      "delay": 700,
-      "typing": false
-    },
     "after9:0": {
-      "type": "message",
-      "text": "反正等下就睡",
       "id": "after9:0",
+      "type": "pause",
       "next": "after9:1",
       "delay": 1000,
       "typing": false
     },
     "after9:1": {
-      "type": "reply",
-      "text": "每次都“等下”",
       "id": "after9:1",
-      "next": "after9:2"
+      "type": "message",
+      "next": "after9:2",
+      "text": "晚安",
+      "delay": 0,
+      "typing": false
     },
     "after9:2": {
-      "type": "message",
-      "text": "这次是真的",
       "id": "after9:2",
-      "next": "after9:3",
-      "delay": 1000,
-      "typing": false
-    },
-    "after9:3": {
       "type": "reply",
-      "text": "我不信",
-      "id": "after9:3",
-      "next": "after9:4"
-    },
-    "after9:4": {
-      "type": "message",
-      "text": "爱信不信",
-      "id": "after9:4",
-      "next": "after9:5",
-      "delay": 1000,
-      "typing": false
-    },
-    "after9:5": {
-      "type": "message",
-      "text": "哼",
-      "id": "after9:5",
-      "next": "after9:6",
-      "delay": 700,
-      "typing": false
-    },
-    "after9:6": {
-      "type": "pause",
-      "delay": 5000,
-      "typing": false,
-      "id": "after9:6",
-      "next": "after9:7"
-    },
-    "after9:7": {
-      "type": "message",
-      "text": "不过",
-      "id": "after9:7",
-      "next": "after9:8",
-      "delay": 0,
-      "typing": false
-    },
-    "after9:8": {
-      "type": "message",
-      "text": "你刚刚说的那个",
-      "id": "after9:8",
-      "next": "after9:9",
-      "delay": 700,
-      "typing": false
-    },
-    "after9:9": {
-      "type": "reply",
-      "text": "哪个",
-      "id": "after9:9",
-      "next": "after9:10"
-    },
-    "after9:10": {
-      "type": "message",
-      "text": "就说我现在跟以前不太一样",
-      "id": "after9:10",
-      "next": "after9:11",
-      "delay": 1700,
-      "typing": true
-    },
-    "after9:11": {
-      "type": "reply",
-      "text": "嗯",
-      "id": "after9:11",
-      "next": "after9:12"
-    },
-    "after9:12": {
-      "type": "message",
-      "text": "我刚刚想了一下",
-      "id": "after9:12",
-      "next": "after9:13",
-      "delay": 1000,
-      "typing": false
-    },
-    "after9:13": {
-      "type": "pause",
-      "delay": 2000,
-      "typing": true,
-      "id": "after9:13",
-      "next": "after9:14"
-    },
-    "after9:14": {
-      "type": "message",
-      "text": "可能确实有一点",
-      "id": "after9:14",
-      "next": "after9:15",
-      "delay": 0,
-      "typing": false
-    },
-    "after9:15": {
-      "type": "message",
-      "text": "有些事情现在不会像以前一样想那么久了",
-      "id": "after9:15",
-      "next": "after9:16",
-      "delay": 2400,
-      "typing": true
-    },
-    "after9:16": {
-      "type": "message",
-      "text": "想了也没用",
-      "id": "after9:16",
-      "next": "after9:17",
-      "delay": 700,
-      "typing": false
-    },
-    "after9:17": {
-      "type": "message",
-      "text": "还不如把自己该做的做好",
-      "id": "after9:17",
-      "next": "q10",
-      "delay": 700,
-      "typing": false
-    },
-    "q10": {
-      "id": "q10",
-      "type": "choice",
-      "options": [
-        {
-          "id": "10A",
-          "label": "感觉你确实长大了",
-          "messages": [
-            "感觉你确实长大了"
-          ],
-          "next": "b10A:0"
-        },
-        {
-          "id": "10B",
-          "label": "这样其实挺好的",
-          "messages": [
-            "这样其实挺好的"
-          ],
-          "next": "b10B:0"
-        },
-        {
-          "id": "10C",
-          "label": "但也不用什么都自己消化",
-          "messages": [
-            "但也不用什么都自己消化"
-          ],
-          "next": "b10C:0"
-        }
-      ]
-    },
-    "b10A:0": {
-      "type": "message",
-      "text": "哈哈哈哈哈哈",
-      "id": "b10A:0",
-      "next": "b10A:1",
-      "delay": 1000,
-      "typing": false
-    },
-    "b10A:1": {
-      "type": "message",
-      "text": "你怎么说得跟我以前很小一样",
-      "id": "b10A:1",
-      "next": "b10A:2",
-      "delay": 1700,
-      "typing": true
-    },
-    "b10A:2": {
-      "type": "reply",
-      "text": "你以前本来就很小",
-      "id": "b10A:2",
-      "next": "b10A:3"
-    },
-    "b10A:3": {
-      "type": "message",
-      "text": "我现在也没有很大好吧",
-      "id": "b10A:3",
-      "next": "b10A:4",
-      "delay": 1000,
-      "typing": false
-    },
-    "b10A:4": {
-      "type": "reply",
-      "text": "所以说“长大了”",
-      "id": "b10A:4",
-      "next": "b10A:5"
-    },
-    "b10A:5": {
-      "type": "message",
-      "text": "好吧",
-      "id": "b10A:5",
-      "next": "b10A:6",
-      "delay": 1000,
-      "typing": false
-    },
-    "b10A:6": {
-      "type": "message",
-      "text": "那就长大了一点",
-      "id": "b10A:6",
-      "next": "after10:0",
-      "delay": 700,
-      "typing": false
-    },
-    "b10B:0": {
-      "type": "message",
-      "text": "我也觉得",
-      "id": "b10B:0",
-      "next": "b10B:1",
-      "delay": 1000,
-      "typing": false
-    },
-    "b10B:1": {
-      "type": "message",
-      "text": "至少不会那么累",
-      "id": "b10B:1",
-      "next": "b10B:2",
-      "delay": 700,
-      "typing": false
-    },
-    "b10B:2": {
-      "type": "message",
-      "text": "而且现在也知道自己要干嘛",
-      "id": "b10B:2",
-      "next": "b10B:3",
-      "delay": 1700,
-      "typing": true
-    },
-    "b10B:3": {
-      "type": "reply",
-      "text": "嗯",
-      "id": "b10B:3",
-      "next": "b10B:4"
-    },
-    "b10B:4": {
-      "type": "message",
-      "text": "慢慢来嘛",
-      "id": "b10B:4",
-      "next": "after10:0",
-      "delay": 1000,
-      "typing": false
-    },
-    "b10C:0": {
-      "type": "pause",
-      "delay": 2000,
-      "typing": false,
-      "id": "b10C:0",
-      "next": "b10C:1"
-    },
-    "b10C:1": {
-      "type": "message",
-      "text": "我知道",
-      "id": "b10C:1",
-      "next": "b10C:2",
-      "delay": 0,
-      "typing": false
-    },
-    "b10C:2": {
-      "type": "message",
-      "text": "我也没有什么都自己憋着",
-      "id": "b10C:2",
-      "next": "b10C:3",
-      "delay": 700,
-      "typing": false
-    },
-    "b10C:3": {
-      "type": "message",
-      "text": "就是有些东西自己想一想就好了",
-      "id": "b10C:3",
-      "next": "b10C:4",
-      "delay": 1700,
-      "typing": true
-    },
-    "b10C:4": {
-      "type": "reply",
-      "text": "那就行",
-      "id": "b10C:4",
-      "next": "b10C:5"
-    },
-    "b10C:5": {
-      "type": "message",
-      "text": "嗯",
-      "id": "b10C:5",
-      "next": "b10C:6",
-      "delay": 1000,
-      "typing": false
-    },
-    "b10C:6": {
-      "type": "message",
-      "text": "放心",
-      "id": "b10C:6",
-      "next": "after10:0",
-      "delay": 700,
-      "typing": false
-    },
-    "after10:0": {
-      "type": "reply",
-      "text": "反正我觉得你现在挺好的",
-      "id": "after10:0",
-      "next": "after10:1"
-    },
-    "after10:1": {
-      "type": "message",
-      "text": "什么叫“挺好的”",
-      "id": "after10:1",
-      "next": "after10:2",
-      "delay": 1000,
-      "typing": false
-    },
-    "after10:2": {
-      "type": "reply",
-      "text": "就是挺好的",
-      "id": "after10:2",
-      "next": "after10:3"
-    },
-    "after10:3": {
-      "type": "message",
-      "text": "又开始了",
-      "id": "after10:3",
-      "next": "after10:4",
-      "delay": 1000,
-      "typing": false
-    },
-    "after10:4": {
-      "type": "reply",
-      "text": "我不太会形容",
-      "id": "after10:4",
-      "next": "after10:5"
-    },
-    "after10:5": {
-      "type": "message",
-      "text": "没事",
-      "id": "after10:5",
-      "next": "after10:6",
-      "delay": 1000,
-      "typing": false
-    },
-    "after10:6": {
-      "type": "message",
-      "text": "我知道你什么意思",
-      "id": "after10:6",
-      "next": "after10:7",
-      "delay": 700,
-      "typing": false
-    },
-    "after10:7": {
-      "type": "pause",
-      "delay": 2000,
-      "typing": false,
-      "id": "after10:7",
-      "next": "after10:8"
-    },
-    "after10:8": {
-      "type": "message",
-      "text": "谢谢",
-      "id": "after10:8",
-      "next": "after10:9",
-      "delay": 0,
-      "typing": false
-    },
-    "after10:9": {
-      "type": "message",
-      "text": "好了",
-      "id": "after10:9",
-      "next": "after10:10",
-      "delay": 700,
-      "typing": false
-    },
-    "after10:10": {
-      "type": "message",
-      "text": "不聊这么认真了",
-      "id": "after10:10",
-      "next": "after10:11",
-      "delay": 700,
-      "typing": false
-    },
-    "after10:11": {
-      "type": "message",
-      "text": "搞得怪怪的",
-      "id": "after10:11",
-      "next": "after10:12",
-      "delay": 700,
-      "typing": false
-    },
-    "after10:12": {
-      "type": "reply",
-      "text": "不是你自己又把话题捡回来的吗",
-      "id": "after10:12",
-      "next": "after10:13"
-    },
-    "after10:13": {
-      "type": "message",
-      "text": "……",
-      "id": "after10:13",
-      "next": "after10:14",
-      "delay": 1000,
-      "typing": false
-    },
-    "after10:14": {
-      "type": "message",
-      "text": "好像是",
-      "id": "after10:14",
-      "next": "after10:15",
-      "delay": 700,
-      "typing": false
-    },
-    "after10:15": {
-      "type": "message",
-      "text": "那没事了",
-      "id": "after10:15",
-      "next": "after10:16",
-      "delay": 700,
-      "typing": false
-    },
-    "after10:16": {
-      "type": "reply",
-      "text": "哈哈哈哈哈哈",
-      "id": "after10:16",
-      "next": "after10:17"
-    },
-    "after10:17": {
-      "type": "message",
-      "text": "你还笑",
-      "id": "after10:17",
-      "next": "after10:18",
-      "delay": 1000,
-      "typing": false
-    },
-    "after10:18": {
-      "type": "reply",
-      "text": "所以现在睡不睡",
-      "id": "after10:18",
-      "next": "after10:19"
-    },
-    "after10:19": {
-      "type": "message",
-      "text": "睡",
-      "id": "after10:19",
-      "next": "after10:20",
-      "delay": 1000,
-      "typing": false
-    },
-    "after10:20": {
-      "type": "message",
-      "text": "真的睡了",
-      "id": "after10:20",
-      "next": "memory",
-      "delay": 700,
-      "typing": false
+      "next": "end",
+      "text": "晚安"
     },
     "memory": {
       "id": "memory",
       "type": "condition",
       "yes": "tired:0",
-      "no": "ordinary:0"
+      "no": "night:0"
     },
     "tired:0": {
-      "type": "message",
-      "text": "等一下",
       "id": "tired:0",
+      "type": "message",
       "next": "tired:1",
-      "delay": 1000,
+      "text": "对了",
+      "delay": 800,
       "typing": false
     },
     "tired:1": {
-      "type": "reply",
-      "text": "？",
       "id": "tired:1",
-      "next": "tired:2"
+      "type": "message",
+      "next": "tired:2",
+      "text": "你不是也说累吗",
+      "delay": 800,
+      "typing": false
     },
     "tired:2": {
-      "type": "message",
-      "text": "你刚刚不是说你今天也很累吗",
       "id": "tired:2",
+      "type": "message",
       "next": "tired:3",
-      "delay": 1700,
-      "typing": true
+      "text": "等下早点睡",
+      "delay": 800,
+      "typing": false
     },
     "tired:3": {
-      "type": "message",
-      "text": "你也早点睡",
       "id": "tired:3",
+      "type": "reply",
       "next": "tired:4",
-      "delay": 700,
-      "typing": false
+      "text": "知道啦"
     },
     "tired:4": {
-      "type": "reply",
-      "text": "你居然还记得",
       "id": "tired:4",
-      "next": "tired:5"
-    },
-    "tired:5": {
       "type": "message",
-      "text": "？",
-      "id": "tired:5",
-      "next": "tired:6",
-      "delay": 1000,
-      "typing": false
-    },
-    "tired:6": {
-      "type": "message",
-      "text": "这才多久",
-      "id": "tired:6",
-      "next": "tired:7",
-      "delay": 700,
-      "typing": false
-    },
-    "tired:7": {
-      "type": "message",
-      "text": "我又不是鱼",
-      "id": "tired:7",
-      "next": "tired:8",
-      "delay": 700,
-      "typing": false
-    },
-    "tired:8": {
-      "type": "reply",
-      "text": "行行行",
-      "id": "tired:8",
-      "next": "tired:9"
-    },
-    "tired:9": {
-      "type": "message",
-      "text": "别熬太晚",
-      "id": "tired:9",
-      "next": "tired:10",
-      "delay": 1000,
-      "typing": false
-    },
-    "tired:10": {
-      "type": "reply",
-      "text": "知道了",
-      "id": "tired:10",
-      "next": "tired:11"
-    },
-    "tired:11": {
-      "type": "message",
+      "next": "night:0",
       "text": "嗯",
-      "id": "tired:11",
-      "next": "night:0",
-      "delay": 1000,
-      "typing": false
-    },
-    "ordinary:0": {
-      "type": "reply",
-      "text": "你先做到再说",
-      "id": "ordinary:0",
-      "next": "ordinary:1"
-    },
-    "ordinary:1": {
-      "type": "message",
-      "text": "知道啦",
-      "id": "ordinary:1",
-      "next": "night:0",
-      "delay": 1000,
+      "delay": 800,
       "typing": false
     },
     "night:0": {
-      "type": "time",
-      "text": "23:18",
       "id": "night:0",
-      "next": "night:1"
+      "type": "time",
+      "next": "night:1",
+      "text": "23:16"
     },
     "night:1": {
-      "type": "message",
-      "text": "晚安",
       "id": "night:1",
-      "next": "q11",
-      "delay": 1000,
+      "type": "message",
+      "next": "night:2",
+      "text": "行了不说了",
+      "delay": 800,
       "typing": false
     },
-    "q11": {
-      "id": "q11",
-      "type": "choice",
-      "options": [
-        {
-          "id": "11A",
-          "label": "晚安",
-          "messages": [
-            "晚安"
-          ],
-          "next": "b11A:0"
-        },
-        {
-          "id": "11B",
-          "label": "快去睡",
-          "messages": [
-            "快去睡"
-          ],
-          "next": "b11B:0"
-        },
-        {
-          "id": "11C",
-          "label": "明天别又困得睁不开眼",
-          "messages": [
-            "明天别又困得睁不开眼"
-          ],
-          "next": "b11C:0"
-        }
-      ]
-    },
-    "b11A:0": {
+    "night:2": {
+      "id": "night:2",
       "type": "message",
-      "text": "嗯嗯",
-      "id": "b11A:0",
-      "next": "after11:0",
-      "delay": 1000,
-      "typing": false
-    },
-    "b11B:0": {
-      "type": "message",
-      "text": "知道了知道了",
-      "id": "b11B:0",
-      "next": "after11:0",
-      "delay": 1000,
-      "typing": false
-    },
-    "b11C:0": {
-      "type": "message",
-      "text": "你不要乌鸦嘴",
-      "id": "b11C:0",
-      "next": "b11C:1",
-      "delay": 1000,
-      "typing": false
-    },
-    "b11C:1": {
-      "type": "message",
-      "text": "哈哈哈哈哈哈",
-      "id": "b11C:1",
-      "next": "after11:0",
-      "delay": 700,
-      "typing": false
-    },
-    "after11:0": {
-      "type": "pause",
-      "delay": 4000,
-      "typing": false,
-      "id": "after11:0",
-      "next": "after11:1"
-    },
-    "after11:1": {
-      "type": "message",
-      "text": "诶",
-      "id": "after11:1",
-      "next": "after11:2",
-      "delay": 0,
-      "typing": false
-    },
-    "after11:2": {
-      "type": "reply",
-      "text": "又怎么了",
-      "id": "after11:2",
-      "next": "after11:3"
-    },
-    "after11:3": {
-      "type": "message",
-      "text": "没事",
-      "id": "after11:3",
-      "next": "after11:4",
-      "delay": 1000,
-      "typing": false
-    },
-    "after11:4": {
-      "type": "message",
-      "text": "就是突然觉得",
-      "id": "after11:4",
-      "next": "after11:5",
-      "delay": 700,
-      "typing": false
-    },
-    "after11:5": {
-      "type": "message",
-      "text": "今天好像也没干什么",
-      "id": "after11:5",
-      "next": "after11:6",
-      "delay": 700,
-      "typing": false
-    },
-    "after11:6": {
-      "type": "pause",
-      "delay": 2000,
-      "typing": false,
-      "id": "after11:6",
-      "next": "after11:7"
-    },
-    "after11:7": {
-      "type": "message",
-      "text": "但是还挺开心的",
-      "id": "after11:7",
-      "next": "after11:8",
-      "delay": 0,
-      "typing": false
-    },
-    "after11:8": {
-      "type": "reply",
-      "text": "那就行",
-      "id": "after11:8",
-      "next": "after11:9"
-    },
-    "after11:9": {
-      "type": "message",
-      "text": "嗯",
-      "id": "after11:9",
-      "next": "after11:10",
-      "delay": 1000,
-      "typing": false
-    },
-    "after11:10": {
-      "type": "message",
-      "text": "这次真睡了",
-      "id": "after11:10",
-      "next": "after11:11",
-      "delay": 700,
-      "typing": false
-    },
-    "after11:11": {
-      "type": "message",
-      "text": "拜拜",
-      "id": "after11:11",
-      "next": "end",
-      "delay": 700,
+      "next": "q9",
+      "text": "明天还得早起",
+      "delay": 800,
       "typing": false
     },
     "end": {
